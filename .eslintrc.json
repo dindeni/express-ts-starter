@@ -1,0 +1,31 @@
+{
+  "root": true,
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "extends": ["airbnb-base", "eslint:recommended", "prettier"],
+  "rules": {
+    "no-console": "error",
+    "indent": ["error", 2],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "never"
+    ],
+    "class-methods-use-this": "off",
+    "import/prefer-default-export": "off",
+    "import/order": [
+      "warn",
+      {
+        "groups": [["builtin", "external"], "internal", ["parent", "sibling", "index"]],
+        "newlines-between": "always",
+        "alphabetize": { "order": "asc", "caseInsensitive": true },
+        "pathGroupsExcludedImportTypes": []
+      }
+    ]
+  }
+}
